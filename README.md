@@ -32,7 +32,7 @@ Major Function definitions follow:
 
 - calculate_fg() Determine the values of F and G (diffusion and convection). Remember to put beta=0 and Pr=1 for temeprature dependent problems.
  
--calcualte_rs: This is the right hand side of the pressure equation and used later on for the time step transition.
+- calcualte_rs: This is the right hand side of the pressure equation and used later on for the time step transition.
 
 - sor(): - Iterate the pressure poisson equation until the residual becomes smaller than eps or the maximal number of iterations is performed. Within the iteration loop the operation sor() is used. Whenever itermax is reached, warning message is displayed to show no convergence on that time step
  
