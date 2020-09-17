@@ -1,6 +1,6 @@
 Arbitrary Geometries and Energy Transport for the Navier-Stokes Equations
 
-Code asks user to choose 1 out of 6 geometries given in Worksheet 2. Can also work for arbitrary geometries as long as following conditions are satisfied:
+Code asks user to choose 1 out of 6 geometries. Can also work for arbitrary geometries as long as following conditions are satisfied:
 1. No-slip condition on inner obstacles
 2. No obstacle cell can share 2 opposite, 3 or 4 edges with a fluid cell, i.e., only single-edge sharing and corner obstacle cells are allowed.
 
