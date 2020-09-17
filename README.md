@@ -1,6 +1,6 @@
 Arbitrary Geometries and Energy Transport for the Navier-Stokes Equations
 
-Code asks user to choose 1 out of 6 geometries given in Worksheet 2. Can also work for arbitrary geometries as long as following conditions are satisfied:
+Code asks user to choose 1 out of 6 geometries. Can also work for arbitrary geometries as long as following conditions are satisfied:
 1. No-slip condition on inner obstacles
 2. No obstacle cell can share 2 opposite, 3 or 4 edges with a fluid cell, i.e., only single-edge sharing and corner obstacle cells are allowed.
 
@@ -30,10 +30,9 @@ Major Function definitions follow:
 
 - calculate_temp- updates temperature value after one time step using forward euler on Dimensionless Energy equation obtained from Boussinesq Approximation. The updates happen not immediately but only after the entire matrix is traversed in the loop. (Gauss-Siedel style)
 
-
-  - calculate_fg() Determine the values of F and G (diffusion and convection). Remember to put beta=0 and Pr=1 for temeprature dependent problems.
+- calculate_fg() Determine the values of F and G (diffusion and convection). Remember to put beta=0 and Pr=1 for temeprature dependent problems.
  
--calcualte_rs: This is the right hand side of the pressure equation and used later on for the time step transition.
+- calcualte_rs: This is the right hand side of the pressure equation and used later on for the time step transition.
 
 - sor(): - Iterate the pressure poisson equation until the residual becomes smaller than eps or the maximal number of iterations is performed. Within the iteration loop the operation sor() is used. Whenever itermax is reached, warning message is displayed to show no convergence on that time step
  
