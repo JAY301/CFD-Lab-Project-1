@@ -30,8 +30,7 @@ Major Function definitions follow:
 
 - calculate_temp- updates temperature value after one time step using forward euler on Dimensionless Energy equation obtained from Boussinesq Approximation. The updates happen not immediately but only after the entire matrix is traversed in the loop. (Gauss-Siedel style)
 
-
-  - calculate_fg() Determine the values of F and G (diffusion and convection). Remember to put beta=0 and Pr=1 for temeprature dependent problems.
+- calculate_fg() Determine the values of F and G (diffusion and convection). Remember to put beta=0 and Pr=1 for temeprature dependent problems.
  
 -calcualte_rs: This is the right hand side of the pressure equation and used later on for the time step transition.
 
